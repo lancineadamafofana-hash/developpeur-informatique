@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Python - Développeur Informatique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🐍</span>
+                <span>Python Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#exercices">Exercices</a></li>
+                <li><a href="#ressources">Ressources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <button id="lang-fr" class="lang-btn active">FR</button>
+                <button id="lang-ar" class="lang-btn">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 data-fr="Maîtrisez Python du Zéro au Héros" data-ar="احترف بايثون من الصفر إلى الاحترافية">Maîtrisez Python du Zéro au Héros</h1>
+            <p data-fr="Une formation complète et progressive pour devenir développeur Python" data-ar="تدريب شامل وتدريجي لتصبح مطور بايثون محترفًا">Une formation complète et progressive pour devenir développeur Python</p>
+            <button class="btn-primary" onclick="document.getElementById('modules').scrollIntoView({behavior: 'smooth'})" data-fr="Commencer" data-ar="ابدأ الآن">Commencer</button>
+        </div>
+        <div class="hero-image">
+            <div class="code-block">
+                <code>
+print("Hello Python World! 🚀")
+                </code>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="modules">
+        <div class="container">
+            <h2 data-fr="Nos Modules de Formation" data-ar="وحداتنا التدريبية">Nos Modules de Formation</h2>
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card">
+                    <div class="module-icon">📚</div>
+                    <h3 data-fr="Fondamentaux Python" data-ar="أساسيات بايثون">Fondamentaux Python</h3>
+                    <p data-fr="Les bases de la programmation Python : variables, types, structures de contrôle" data-ar="أساسيات البرمجة في بايثون: المتغيرات والأنواع وهياكل التحكم">Les bases de la programmation Python : variables, types, structures de contrôle</p>
+                    <a href="#module1" class="module-link" data-fr="Voir plus" data-ar="اعرف المزيد">Voir plus →</a>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card">
+                    <div class="module-icon">🎯</div>
+                    <h3 data-fr="Programmation Orientée Objet" data-ar="البرمجة الموجهة للكائنات">Programmation Orientée Objet</h3>
+                    <p data-fr="Classes, héritage, polymorphisme et encapsulation en Python" data-ar="الفئات والوراثة وتعدد الأشكال والتغليف في بايثون">Classes, héritage, polymorphisme et encapsulation en Python</p>
+                    <a href="#module2" class="module-link" data-fr="Voir plus" data-ar="اعرف المزيد">Voir plus →</a>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card">
+                    <div class="module-icon">📊</div>
+                    <h3 data-fr="Manipulation de Données" data-ar="معالجة البيانات">Manipulation de Données</h3>
+                    <p data-fr="Listes, dictionnaires, fichiers et travail avec les données" data-ar="القوائم والقواموس والملفات والعمل مع البيانات">Listes, dictionnaires, fichiers et travail avec les données</p>
+                    <a href="#module3" class="module-link" data-fr="Voir plus" data-ar="اعرف المزيد">Voir plus →</a>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-card">
+                    <div class="module-icon">🌐</div>
+                    <h3 data-fr="Développement Web" data-ar="تطوير الويب">Développement Web</h3>
+                    <p data-fr="Flask, Django et création d'applications web modernes" data-ar="فلاسك وجانجو وإنشاء تطبيقات ويب حديثة">Flask, Django et création d'applications web modernes</p>
+                    <a href="#module4" class="module-link" data-fr="Voir plus" data-ar="اعرف المزيد">Voir plus →</a>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module-card">
+                    <div class="module-icon">🤖</div>
+                    <h3 data-fr="Science des Données" data-ar="علم البيانات">Science des Données</h3>
+                    <p data-fr="NumPy, Pandas, Matplotlib et introduction au Machine Learning" data-ar="NumPy و Pandas و Matplotlib مقدمة في التعلم الآلي">NumPy, Pandas, Matplotlib et introduction au Machine Learning</p>
+                    <a href="#module5" class="module-link" data-fr="Voir plus" data-ar="اعرف المزيد">Voir plus →</a>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module-card">
+                    <div class="module-icon">🔧</div>
+                    <h3 data-fr="Outils et Bonnes Pratiques" data-ar="الأدوات والممارسات الجيدة">Outils et Bonnes Pratiques</h3>
+                    <p data-fr="Git, testing, debugging et déploiement d'applications Python" data-ar="جيت والاختبار والتصحيح ونشر تطبيقات بايثون">Git, testing, debugging et déploiement d'applications Python</p>
+                    <a href="#module6" class="module-link" data-fr="Voir plus" data-ar="اعرف المزيد">Voir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercices Section -->
+    <section id="exercices" class="exercises">
+        <div class="container">
+            <h2 data-fr="Exercices Pratiques" data-ar="تمارين عملية">Exercices Pratiques</h2>
+            <div class="exercises-content">
+                <div class="exercise-item">
+                    <h3 data-fr="Niveau Débutant" data-ar="مستوى المبتدئ">Niveau Débutant</h3>
+                    <ul>
+                        <li data-fr="Variables et types de données" data-ar="المتغيرات وأنواع البيانات">Variables et types de données</li>
+                        <li data-fr="Opérations mathématiques" data-ar="العمليات الحسابية">Opérations mathématiques</li>
+                        <li data-fr="Conditions et boucles" data-ar="الشروط والحلقات">Conditions et boucles</li>
+                        <li data-fr="Fonctions simples" data-ar="الدوال البسيطة">Fonctions simples</li>
+                    </ul>
+                    <button class="btn-secondary" data-fr="Commencer" data-ar="ابدأ">Commencer</button>
+                </div>
+
+                <div class="exercise-item">
+                    <h3 data-fr="Niveau Intermédiaire" data-ar="مستوى متوسط">Niveau Intermédiaire</h3>
+                    <ul>
+                        <li data-fr="Listes et dictionnaires" data-ar="القوائس والقواموس">Listes et dictionnaires</li>
+                        <li data-fr="Traitement de chaînes" data-ar="معالجة النصوص">Traitement de chaînes</li>
+                        <li data-fr="Compréhensions de listes" data-ar="فهم القوائم">Compréhensions de listes</li>
+                        <li data-fr="Gestion des fichiers" data-ar="إدارة الملفات">Gestion des fichiers</li>
+                    </ul>
+                    <button class="btn-secondary" data-fr="Commencer" data-ar="ابدأ">Commencer</button>
+                </div>
+
+                <div class="exercise-item">
+                    <h3 data-fr="Niveau Avancé" data-ar="مستوى متقدم">Niveau Avancé</h3>
+                    <ul>
+                        <li data-fr="POO et design patterns" data-ar="البرمجة الموجهة للكائنات والأنماط الحديثة">POO et design patterns</li>
+                        <li data-fr="Décorateurs et générateurs" data-ar="الديكوريتورز والمولدات">Décorateurs et générateurs</li>
+                        <li data-fr="Gestion des exceptions" data-ar="معالجة الاستثناءات">Gestion des exceptions</li>
+                        <li data-fr="Projets complets" data-ar="مشاريع متكاملة">Projets complets</li>
+                    </ul>
+                    <button class="btn-secondary" data-fr="Commencer" data-ar="ابدأ">Commencer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ressources Section -->
+    <section id="ressources" class="resources">
+        <div class="container">
+            <h2 data-fr="Ressources Utiles" data-ar="الموارد المفيدة">Ressources Utiles</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>📖 Documentation</h3>
+                    <p data-fr="Documentation officielle Python et guides complets" data-ar="الوثائق الرسمية لبايثون والأدلة الشاملة">Documentation officielle Python et guides complets</p>
+                    <a href="https://docs.python.org/3/" target="_blank" class="btn-link">Accéder →</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>💻 IDE et Éditeurs</h3>
+                    <p data-fr="Outils recommandés pour programmer en Python" data-ar="الأدوات الموصى بها للبرمجة في بايثون">Outils recommandés pour programmer en Python</p>
+                    <ul class="resource-list">
+                        <li>PyCharm</li>
+                        <li>VS Code</li>
+                        <li>Jupyter Notebook</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>📚 Bibliothèques Essentielles</h3>
+                    <p data-fr="Les bibliothèques Python incontournables" data-ar="مكتبات بايثون التي لا غنى عنها">Les bibliothèques Python incontournables</p>
+                    <ul class="resource-list">
+                        <li>NumPy - Calcul numérique</li>
+                        <li>Pandas - Analyse de données</li>
+                        <li>Django - Web framework</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>🎓 Certificats</h3>
+                    <p data-fr="Obtenez vos certificats après chaque module" data-ar="احصل على شهاداتك بعد كل وحدة">Obtenez vos certificats après chaque module</p>
+                    <button class="btn-secondary" data-fr="En savoir plus" data-ar="اعرف المزيد">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label" data-fr="Cours" data-ar="دورات">Cours</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">200+</div>
+                <div class="stat-label" data-fr="Exercices" data-ar="تمارين">Exercices</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10,000+</div>
+                <div class="stat-label" data-fr="Apprenants" data-ar="المتعلمون">Apprenants</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label" data-fr="Gratuit" data-ar="مجاني">Gratuit</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-fr="Nous Contacter" data-ar="تواصل معنا">Nous Contacter</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Votre nom" data-fr-placeholder="Votre nom" data-ar-placeholder="اسمك" required>
+                <input type="email" placeholder="Votre email" data-fr-placeholder="Votre email" data-ar-placeholder="بريدك الإلكتروني" required>
+                <textarea placeholder="Votre message" data-fr-placeholder="Votre message" data-ar-placeholder="رسالتك" required></textarea>
+                <button type="submit" class="btn-primary" data-fr="Envoyer" data-ar="إرسال">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-fr="© 2024 Formation Python - Développeur Informatique. Tous droits réservés." data-ar="© 2024 تدريب بايثون - مطور الكمبيوتر. جميع الحقوق محفوظة.">© 2024 Formation Python - Développeur Informatique. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
